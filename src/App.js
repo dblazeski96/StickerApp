@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
 import './App.css'
 
-
 class App extends Component {
   render() {
-    return (
-      <div>
-        Success
-      </div>
-    );
+    return <div>Success</div>
   }
 }
-
 
 export default App
