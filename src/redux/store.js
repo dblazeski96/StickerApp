@@ -9,6 +9,18 @@ const initialState = {
     {
       id: 1,
       name: 'marko'
+    },
+    {
+      id: 2,
+      name: 'riste'
+    },
+    {
+      id: 3,
+      name: 'meri'
+    },
+    {
+      id: 4,
+      name: 'kire'
     }
   ]
 }
