@@ -1,12 +1,11 @@
 import React from 'react'
-import { Card, CardContent, Typography, CardMedia } from '@material-ui/core'
+import { Card, CardContent, Typography } from '@material-ui/core'
 
 const styles = {
   card: {
     display: 'flex',
     flexDirection: 'column',
     minWidth: '100px',
-    maxWidth: '400px',
     maxHeight: '80vh',
     marginTop: 20,
     marginLeft: 20,
@@ -30,7 +29,11 @@ const styles = {
 export const Album = ({ album }) => (
   <Card style={styles.card}>
     {/* <CardMedia image={require(`./album${album.id}.jpg`)} /> */}
-    <img src={require(`./album${album.id}.jpg`)} style={styles.img} />
+    <img
+      src={require(`./album${album.id}.jpg`)}
+      alt={album.name}
+      style={styles.img}
+    />
     <CardContent style={styles.cardContent}>
       <Typography gutterBottom variant="title" component="h2">
         {album.name}
